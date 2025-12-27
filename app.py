@@ -849,7 +849,7 @@ def render_content_tab():
         )
     
     with col2:
-        clear_log = st.button("🗑️ Clear Log", use_container_width=True, key="clear_gen_log")
+        clear_log = st.button("🗑️ Clear Log", use_container_width=True, key="clear_content_log")
         if clear_log:
             st.session_state.content_log = []
             st.rerun()
