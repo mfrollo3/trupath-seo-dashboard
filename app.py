@@ -539,7 +539,7 @@ def render_generator_tab():
         )
     
     with col2:
-        clear_log = st.button("🗑️ Clear Log", use_container_width=True)
+        clear_log = st.button("🗑️ Clear Log", use_container_width=True, key="clear_gen_log")
         if clear_log:
             st.session_state.fetch_log = []
             st.rerun()
@@ -849,7 +849,7 @@ def render_content_tab():
         )
     
     with col2:
-        clear_log = st.button("🗑️ Clear Log", use_container_width=True)
+        clear_log = st.button("🗑️ Clear Log", use_container_width=True, key="clear_gen_log")
         if clear_log:
             st.session_state.content_log = []
             st.rerun()
